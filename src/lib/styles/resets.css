@@ -74,3 +74,25 @@ select {
 button {
   border: none;
 }
+
+section {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  gap: 36px 0;
+}
+
+section h2 {
+  font-size: var(--font-l);
+}
+
+section p {
+  font-size: var(--font-m);
+}
+
+section p button {
+  font-weight: var(--font-bold);
+  margin: 16px;
+}
