@@ -7,7 +7,6 @@ function useStore(value: any) {
 
   function StateReducer(state = initialState, action: any) {
     const { type, payload } = action
-
     switch (type) {
       case 'SET_STATE': {
         return {

@@ -1,10 +1,7 @@
-import { useWrapper } from '@components/WrapperProvider/WrapperProvider'
-import useStore from '@lib/tools/useStore'
 import { Button } from 'primitive-jsx'
 
-function ComponentA() {
-  const [syncState, setSyncState] = useWrapper() as Array<any>
-  const [state, dispatch] = useStore(syncState)
+function ComponentA(props: any) {
+  const { state, setSyncState, dispatch } = props
 
   const handleClick = () => {
     dispatch({
